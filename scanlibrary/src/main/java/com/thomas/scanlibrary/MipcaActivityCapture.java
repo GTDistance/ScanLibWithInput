@@ -215,19 +215,19 @@ public class MipcaActivityCapture extends Activity implements Callback {
         if (resultString.equals("")) {
             Toast.makeText(MipcaActivityCapture.this, "Scan failed!", Toast.LENGTH_SHORT).show();
         } else {
-            Intent resultIntent = new Intent();
-            Bundle bundle = new Bundle();
+//            Intent resultIntent = new Intent();
+//            Bundle bundle = new Bundle();
 //            resultString = resultString.replaceAll("[^(a-zA-Z0-9\\u4e00-\\u9fa5)]", "");
 //            bundle.putString("result", resultString);
 
-            resultString = resultString.replaceAll("[^(a-zA-Z0-9\\u4e00-\\u9fa5)]", ";");
-            String[] splits = resultString.split(";");
-            bundle.putString("result", resultString);
-            bundle.putString("result", splits[0]);
+//            resultString = resultString.replaceAll("[^(a-zA-Z0-9\\u4e00-\\u9fa5)]", ";");
+//            String[] splits = resultString.split(";");
+//            bundle.putString("result", resultString);
+//            bundle.putString("result", splits[0]);
 
 //            bundle.putParcelable("bitmap", barcode);
-            resultIntent.putExtras(bundle);
-            setResult("1",splits[0]);
+//            resultIntent.putExtras(bundle);
+            setResult("1",resultString);
 //            this.setResult(RESULT_OK, resultIntent);
         }
         MipcaActivityCapture.this.finish();
