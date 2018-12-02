@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.GTDistance'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+//
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+//buildscript {
+//    repositories {
+//        jcenter()
+//    }
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:2.2.3'
+//        // add github maven plugin
+//        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+//        classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0"
+////        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+////        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+//        // NOTE: Do not place your application dependencies here; they belong
+//        // in the individual module build.gradle files
+//    }
+//}
+
+
+dependencies {
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+//    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+//    implementation files('src/main/libs/core.jar')
+    compile files('src/main/libs/core.jar')
+}
