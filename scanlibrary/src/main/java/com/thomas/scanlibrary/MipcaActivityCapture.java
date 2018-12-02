@@ -34,6 +34,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.Vector;
+import java.util.regex.Pattern;
 
 
 /**
@@ -89,10 +90,10 @@ public class MipcaActivityCapture extends Activity implements Callback {
                         confirmDialog.dismiss();
                         System.out.println(editStr);
                         //toUserHome(context);
-                        if(editStr!=null&&editStr.equals("")){
-                            Toast.makeText(active,"请输入编码",Toast.LENGTH_LONG).show();
-                        }else {
+                        if(checkNumber(editStr)){
                             setResult("3",editStr);
+                        }else {
+                            Toast.makeText(active,"请输入正确的19位编码",Toast.LENGTH_LONG).show();
                         }
                     }
 
@@ -138,6 +139,11 @@ public class MipcaActivityCapture extends Activity implements Callback {
         inactivityTimer = new InactivityTimer(this);
     }
 
+    public static boolean checkNumber(String number) {
+        Pattern pattern = Pattern.compile("^[0-9]{19}$");
+        return pattern.matcher(number).find();
+
+    }
 
     private void setResult(String type,String content){
         JSONObject jsonObject = new JSONObject();
