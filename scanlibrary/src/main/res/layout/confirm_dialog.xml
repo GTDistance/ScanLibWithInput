@@ -30,6 +30,8 @@
             android:background="@drawable/edit_bg"
             android:inputType="number"
             android:padding="10dp"
+            android:textColorHint="#aaa"
+            android:textColor="#333"
             android:textSize="18sp" />
 
     </LinearLayout>
@@ -57,6 +59,7 @@
                 android:padding="10dp"
                 android:gravity="center"
                 android:text="取消"
+                android:textColor="#333"
                 android:textSize="20sp"/>
             <View
                 android:layout_width="1dp"
