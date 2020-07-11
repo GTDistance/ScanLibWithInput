@@ -140,7 +140,7 @@ public class MipcaActivityCapture extends Activity implements Callback {
     }
 
     public static boolean checkNumber(String number) {
-        Pattern pattern = Pattern.compile("^[A-Z0-9]$");
+        Pattern pattern = Pattern.compile("^[A-Z0-9]+$");
         return pattern.matcher(number).find();
 
     }
