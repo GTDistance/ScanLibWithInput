@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/GitHub-ScanLibWithInput.iml" filepath="$PROJECT_DIR$/GitHub-ScanLibWithInput.iml" group="ScanLibWithInput" />
       <module fileurl="file://$PROJECT_DIR$/ScanLibWithInput.iml" filepath="$PROJECT_DIR$/ScanLibWithInput.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/ScanLibWithInput-app.iml" filepath="$PROJECT_DIR$/app/ScanLibWithInput-app.iml" group="ScanLibWithInput/app" />
+      <module fileurl="file://$PROJECT_DIR$/scanlibrary/ScanLibWithInput-scanlibrary.iml" filepath="$PROJECT_DIR$/scanlibrary/ScanLibWithInput-scanlibrary.iml" group="ScanLibWithInput/scanlibrary" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/scanlibrary/scanlibrary.iml" filepath="$PROJECT_DIR$/scanlibrary/scanlibrary.iml" />
     </modules>

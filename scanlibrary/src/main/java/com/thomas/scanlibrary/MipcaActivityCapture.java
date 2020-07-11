@@ -93,7 +93,7 @@ public class MipcaActivityCapture extends Activity implements Callback {
                         if(checkNumber(editStr)){
                             setResult("3",editStr);
                         }else {
-                            Toast.makeText(active,"请输入正确的19位编码",Toast.LENGTH_LONG).show();
+                            Toast.makeText(active,"请输入正确的编码",Toast.LENGTH_LONG).show();
                         }
                     }
 
@@ -140,7 +140,7 @@ public class MipcaActivityCapture extends Activity implements Callback {
     }
 
     public static boolean checkNumber(String number) {
-        Pattern pattern = Pattern.compile("^[0-9]{19}$");
+        Pattern pattern = Pattern.compile("^[A-Z0-9]$");
         return pattern.matcher(number).find();
 
     }
