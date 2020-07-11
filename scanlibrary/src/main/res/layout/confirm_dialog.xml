@@ -28,7 +28,6 @@
             android:layout_height="wrap_content"
             android:hint="请输入编号"
             android:background="@drawable/edit_bg"
-            android:inputType="number"
             android:padding="10dp"
             android:textColorHint="#aaa"
             android:textColor="#333"
